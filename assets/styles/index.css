@@ -1,0 +1,211 @@
+/************** Color **************/
+/************** Font **************/
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-VariableFont_wght.ttf);
+}
+/************** General paramater **************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: hsl(216, 12%, 8%);
+  font-family: Overpass, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-weight: 400;
+}
+body h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  font-weight: 700;
+}
+@media screen and (max-width: 400px) {
+  body h2 {
+    font-size: 24px;
+  }
+}
+body p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  line-height: 24px;
+}
+@media screen and (max-width: 400px) {
+  body p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.attribution {
+  display: none;
+}
+
+.component {
+  width: 412px;
+  min-height: 416px;
+  border-radius: 30px;
+  padding: 32px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#232A34), to(#181E27));
+  background: linear-gradient(to bottom, #232A34, #181E27);
+}
+@media screen and (max-width: 400px) {
+  .component {
+    width: 327px;
+    min-height: 360px;
+    padding: 32px;
+  }
+}
+
+input, label.circle {
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.grey-selected {
+  background: whitesmoke;
+}
+
+#component-rating .circle {
+  width: 48px;
+  height: 48px;
+  background: hsl(213, 19%, 18%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media screen and (max-width: 400px) {
+  #component-rating .circle {
+    width: 42px;
+    height: 42px;
+  }
+}
+#component-rating input[type=checkbox] + label.circle:hover {
+  background: hsl(25, 97%, 53%);
+}
+#component-rating h2 {
+  margin: 30px 0 15px;
+}
+@media screen and (max-width: 400px) {
+  #component-rating h2 {
+    margin: 16px 0 10px;
+  }
+}
+#component-rating form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 24px 0 32px;
+  width: 100%;
+  color: hsl(217, 12%, 63%);
+  font-weight: 700;
+  font-size: 16px;
+}
+@media screen and (max-width: 400px) {
+  #component-rating form div {
+    margin: 24px 0;
+  }
+}
+#component-rating form input[type=submit] {
+  color: hsl(0, 0%, 100%);
+  display: block;
+  width: 100%;
+  background: hsl(25, 97%, 53%);
+  height: 45px;
+  border: none;
+  border-radius: 22.5px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media screen and (max-width: 400px) {
+  #component-rating form input[type=submit] {
+    font-size: 14px;
+  }
+}
+#component-rating form input[type=submit]:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+#component-rating form input[type=checkbox]:checked + label.circle.choice {
+  background: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#component-thanks {
+  display: none;
+  padding: 45px 32px;
+  text-align: center;
+}
+#component-thanks img {
+  display: block;
+  margin: 0 auto;
+  width: 162px;
+  height: 108px;
+}
+#component-thanks div {
+  margin: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 32px;
+}
+#component-thanks div span {
+  background: hsl(213, 19%, 18%);
+  padding: 4px 20px;
+  border-radius: 22.5px;
+  color: hsl(25, 97%, 53%);
+  font-size: 15px;
+}
+#component-thanks h2 {
+  margin-bottom: 10px;
+}
+#component-thanks p {
+  line-height: 24px;
+  font-size: 15px;
+}/*# sourceMappingURL=index.css.map */

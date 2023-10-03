@@ -1,0 +1,93 @@
+/************** Color **************/
+$orange:hsl(25, 97%, 53%);
+
+$white: hsl(0, 0%, 100%);
+$LightGray: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
+/************** Font **************/
+@font-face {
+    font-family: "Overpass";
+    src: url(../fonts/Overpass-VariableFont_wght.ttf);
+}
+
+$font1: Overpass, sans-serif;
+
+/************** General paramater **************/
+
+@mixin alignCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: $VeryDarkBlue;
+    font-family: $font1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 400;
+    
+    h2{
+        @media screen and (max-width:400px){
+            font-size: 24px;
+        }
+        color:$white;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    p{
+        @media screen and (max-width:400px){
+            font-size: 14px;
+            line-height: 22px;
+        }
+        color: $LightGray;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+.attribution{
+    display: none;
+}
+
+.component{
+    @media screen and (max-width:400px){
+        width: 327px;
+        min-height: 360px;
+        padding: 32px;
+    }
+
+    width: 412px;
+    min-height: 416px;
+    border-radius: 30px;
+    padding: 32px;
+    background: linear-gradient(to bottom, #232A34,#181E27);
+
+}
+
+input, label.circle{
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+
+
+.grey-selected{
+    background: whitesmoke;
+}
